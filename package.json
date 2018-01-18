@@ -1,0 +1,19 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Curso de TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martins-wescley/js-tdd-course.git"
+  },
+  "author": "Wescley Martins <wescleymartins02@gmail.com> (https://github.com/WescleyMartins1988)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martins-wescley/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/martins-wescley/js-tdd-course#readme"
+}
