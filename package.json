@@ -1,7 +1,7 @@
 {
-  "name": "js-tdd-course",
+  "name": "Spotify-Wrapper",
   "version": "1.0.0",
-  "description": "Curso de TDD",
+  "description": "A wrapper to work with the Spotify Web API",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
@@ -21,14 +21,14 @@
     
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martins-wescley/js-tdd-course.git"
+    "url": "git+https://github.com/martins-wescley/Spotify-Wrapper.git"
   },
   "author": "Wescley Martins <wescleymartins02@gmail.com> (https://github.com/WescleyMartins1988)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/martins-wescley/js-tdd-course/issues"
+    "url": "https://github.com/martins-wescley/Spotify-Wrapper/issues"
   },
-  "homepage": "https://github.com/martins-wescley/js-tdd-course#readme",
+  "homepage": "https://github.com/martins-wescley/Spotify-Wrapper#readme",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
