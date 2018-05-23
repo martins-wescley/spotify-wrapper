@@ -5,6 +5,7 @@ import sinonStubPromise from 'sinon-stub-promise';
 
 chai.use(sinonChai);
 sinonStubPromise(sinon);
+
 global.fetch = require('node-fetch');
 
 
@@ -48,9 +49,11 @@ describe('Album', () =>{
                .calledWith('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTk');
        });
         
-       it.skip('should return the correct Data from Promise', () =>{
-           promise.resolves( { album: 'name'} );
+       it('should return the correct Data from Promise', () =>{
+           promise.resolves({ album: 'name' });
+           
            const album  = getAlbum('4aawyAB9vmqN3uQ7FjRGTy');
+           
            expect(album.resolveValue).to.be.eql({ album: 'name'});
            
        });
