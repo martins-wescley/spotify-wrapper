@@ -11,8 +11,8 @@
     "test:coverage": "nyc npm test"
   },
   "nyc": {
-    "functions": 80,
-    "lines": 80,
+    "functions": 10,
+    "lines": 10,
     "check-coverage": true,
     "reporter": [
       "text",
@@ -43,7 +43,11 @@
     "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
     "mocha": "^5.1.1",
-    "nyc": "^11.8.0"
+    "node-fetch": "^2.1.2",
+    "nyc": "^11.8.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^3.0.0",
+    "sinon-stub-promise": "^4.0.0"
   },
   "dependencies": {
     "update-node": "^0.1.0"
