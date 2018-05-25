@@ -8,6 +8,9 @@
     "create:lib": "./node_modules/.bin/babel --out-dir lib src",
     "build": "npm run clear && npm run create:lib",
     "build:watch": "npm run clear && npm run create:lib -- --watch",
+    "build:umd": "./node_modules/.bin/webpack --output-filename spotify-wrapper.umd.js",
+    "build:umd:min": "./node_modules/.bin/webpack --output-filename spotify-wrapper.umd.min.js -p",
+    "build:umd:all": "npm run build && npm run build:umd && npm run build:umd:min",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run test:coverage",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
@@ -54,7 +57,8 @@
     "rimraf": "^2.6.1",
     "sinon": "^2.1.0",
     "sinon-chai": "^3.0.0",
-    "sinon-stub-promise": "^4.0.0"
+    "sinon-stub-promise": "^4.0.0",
+    "webpack": "^2.4.1"
   },
   "dependencies": {
     "@babel/node": "^7.0.0-beta.47",
