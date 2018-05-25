@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/martins-wescley/spotify-wrapper.svg?branch=master)](https://travis-ci.org/martins-wescley/spotify-wrapper)
 
+[![Coverage Status](https://coveralls.io/repos/github/martins-wescley/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/martins-wescley/spotify-wrapper?branch=master)
+
 A wrapper to work with the [Spotify Web API](https://beta.developer.spotify.com/documentation/web-api/).
 
 ## Browser Support
