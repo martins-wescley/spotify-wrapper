@@ -1,5 +1,7 @@
 # Spotify Wrapper
 
+[![Build Status](https://travis-ci.org/martins-wescley/spotify-wrapper.svg?branch=master)](https://travis-ci.org/martins-wescley/spotify-wrapper)
+
 A wrapper to work with the [Spotify Web API](https://beta.developer.spotify.com/documentation/web-api/).
 
 ## Browser Support
