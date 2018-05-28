@@ -1,11 +1,24 @@
-import {
-    search, searchAlbums, searchArtists, searchTracks, searchPlaylists
-} from '../src/search';
+import { API_URL } from './config'; 
+import album from './album';
+import search from './search';
+import toJSON from './utils';
 
-import {
-    getAlbum, getAlbums, getTracks
-} from '../src/album';
-
-module.exports = {
-    search, searchAlbums, searchArtists, searchTracks, searchPlaylists, getAlbum, getAlbums, getTracks
+export default class SportifyWrapper{
+    constructor(options){
+        this.apiURL   = options.apiURL || API_URL;
+        this.token    = options.token;
+        
+        this.album    = album.bind(this)();
+        this.search   = search.bind(this)();
+    }
+    
+    request(url){
+        const headers = {
+            headers:{
+                Authorization: `Bearer ${this.token}`
+        },
+    };
+        
+    return fetch(url, headers).then(toJSON);
+    }
 }
